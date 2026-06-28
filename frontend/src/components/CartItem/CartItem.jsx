@@ -2,29 +2,27 @@ import useCartContext from "../../contexts/CartContext/useCartContext.jsx";
 import "./CartItem.css";
 
 const CartItem = ({ item }) => {
-    const {itemQuantityIncreaseById, itemQuantityDecreaseById, deleteItemById} = useCartContext();
+    const { removeFromCart } = useCartContext();
 
     return (
         <div className="cartItem">
             <div className="item-img-container">
-                <img src={item.imageUrl} alt="" />
+                <img src={item.imagen} alt={item.nombre} />
             </div>
             <div className="item-info-container">
-                <span>{item.description}</span>
-                <button onClick={() => deleteItemById(item.id)}>Eliminar</button>
+                <span>{item.nombre}</span>
+                <button onClick={() => removeFromCart(item.id)}>Eliminar</button>
             </div>
             <div className="item-quantity-container">
                 <div className="border-buttons">
-                    <button onClick={() => itemQuantityDecreaseById(item.id)}>-</button>
-                    <span>{item.quantity}</span>
-                    <button onClick={() => itemQuantityIncreaseById(item.id)}>+</button>
+                    <span>x{item.cantidad}</span>
                 </div>
             </div>
             <div className="item-subtotal-container">
-                <span>u$s {item.subtotal.toFixed(2)}</span>
+                <span>${(item.precio * item.cantidad).toLocaleString("es-AR")}</span>
             </div>
-
         </div>
     );
 };
+
 export default CartItem;

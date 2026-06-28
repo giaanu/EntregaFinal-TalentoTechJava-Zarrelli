@@ -1,5 +1,6 @@
 package com.techlab.store.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 @Entity
@@ -11,6 +12,7 @@ public class LineaPedido {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "pedido_id", nullable = false)
     private Pedido pedido;
@@ -19,8 +21,10 @@ public class LineaPedido {
     @JoinColumn(name = "producto_id", nullable = false)
     private Producto producto;
 
-    private int cantidad;
-    private double subtotal;
+    
+
+    private Integer cantidad;
+    private Double subtotal;
 
     // Constructor vacío
     public LineaPedido() {}
@@ -37,13 +41,13 @@ public class LineaPedido {
     public Long     getId()       { return id; }
     public Pedido   getPedido()   { return pedido; }
     public Producto getProducto() { return producto; }
-    public int      getCantidad() { return cantidad; }
-    public double   getSubtotal() { return subtotal; }
+    public Integer      getCantidad() { return cantidad; }
+    public Double   getSubtotal() { return subtotal; }
 
     // Setters
     public void setId(Long id)             { this.id = id; }
     public void setPedido(Pedido pedido)   { this.pedido = pedido; }
     public void setProducto(Producto producto) { this.producto = producto; }
-    public void setCantidad(int cantidad)  { this.cantidad = cantidad; }
-    public void setSubtotal(double subtotal) { this.subtotal = subtotal; }
+    public void setCantidad(Integer cantidad)  { this.cantidad = cantidad; }
+    public void setSubtotal(Double subtotal) { this.subtotal = subtotal; }
 }

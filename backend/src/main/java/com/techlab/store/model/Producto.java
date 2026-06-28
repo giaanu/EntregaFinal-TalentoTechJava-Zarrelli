@@ -17,7 +17,7 @@ public class Producto {
     private String descripcion;
 
     @Column(nullable = false)
-    private double precio;
+    private Double precio;
 
     private String imagen;
 

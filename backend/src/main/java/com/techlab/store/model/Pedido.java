@@ -21,7 +21,7 @@ public class Pedido {
     @OneToMany(mappedBy = "pedido", cascade = CascadeType.ALL)
     private List<LineaPedido> lineas = new ArrayList<>();
 
-    private double total;
+    private Double total;
 
     @Enumerated(EnumType.STRING)
     private EstadoPedido estado;
@@ -34,7 +34,7 @@ public class Pedido {
     // Constructor
     public Pedido(Usuario usuario) {
         this.usuario = usuario;
-        this.total   = 0;
+        this.total   = 0.0;
         this.estado  = EstadoPedido.PENDIENTE;
         this.fecha   = LocalDateTime.now();
     }
