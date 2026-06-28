@@ -1,10 +1,12 @@
 .home-central-section-container {
     width: 100%;
-    min-height: 100vh;
-    background-image: url(../../assets//img/ocarina.jpg);
+    min-height: 60vh;
+    background-image: url(../../assets/img/ocarina.jpg);
+    background-size: cover;
+    background-position: center top;
     display: flex;
     color: #ffffff;
-    padding-top: 8%;
+    padding-top: 5%;
 }
 
 .home-h1-container,
@@ -48,14 +50,9 @@
     width: 50%;
 }
 
-
-/* -------------------------------------------------------------------------- */
-/*                               Medias Queries                               */
-/* -------------------------------------------------------------------------- */
-
 @media (min-width: 1024px) and (max-width: 1200px) {
     .home-central-section-container {
-        min-height: 100vh;
+        min-height: 60vh;
     }
 
     .home-h1-container {
@@ -72,11 +69,10 @@
         padding-left: 10%;
     }
 }
-
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .home-central-section-container {
-        min-height: 150vh;
+        min-height: 80vh;
     }
 
     .home-h1-container {
@@ -93,8 +89,6 @@
         padding-left: 10%;
     }
 }
-
-
 
 @media (max-width: 600px) {
     .home-central-section-container {
@@ -126,7 +120,6 @@
         text-align: center;
     }
 
-
     .home-central-img-container {
         display: flex;
         justify-content: center;
@@ -136,5 +129,3 @@
         height: 150px;
     }
 }
-
-/* border: 1px solid red; */

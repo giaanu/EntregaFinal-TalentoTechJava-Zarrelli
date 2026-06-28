@@ -27,11 +27,12 @@ const ProductList = () => {
         <section className="product-list-section">
             <div className="product-list-container">
                 {products.map(product =>
-                    <ProductCard
-                        key={product.id}
-                        product={product}
-                        addToCart={addToCart}
-                    />
+                    <div key={product.id} className="product-card-wrapper">
+                        <ProductCard
+                            product={product}
+                            addToCart={addToCart}
+                        />
+                    </div>
                 )}
             </div>
             <div className="product-list-pagination-container">

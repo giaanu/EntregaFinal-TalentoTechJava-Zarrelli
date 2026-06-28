@@ -16,8 +16,8 @@ const Header = () => {
             <nav>
                 <ul className={isMenuActive ? "menu-active" : "menu-inactive"}>
                     <li><Link to="/">Home</Link></li>
-                    <li><Link to="/">Nosotros</Link></li>
-                    <li><Link to="/">Contacto</Link></li>
+                    <li><Link to="/nosotros">Nosotros</Link></li>
+                    <li><Link to="/contacto">Contacto</Link></li>
                     <li className="nav-hidden-link"><Link to="/cart">Carrito</Link></li>
                     <li className="nav-hidden-link"><Link to="/">Login</Link></li>
                 </ul>

@@ -1,57 +1,89 @@
 .product-card-container {
     height: 370px;
     width: 100%;
-    border: black 1px solid;
+    border: 1px solid rgba(0, 173, 181, 0.4);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     transition: transform 0.2s;
     cursor: pointer;
-    background-color: white;
+    background-color: rgba(26, 26, 46, 0.9);
     border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(11, 30, 58, 0.1);
+    box-shadow: 0 2px 6px rgba(0, 173, 181, 0.15);
+    overflow: hidden;
 }
 
 .product-card-container:hover {
-    transform: scale(1.01);
-    box-shadow: 0 8px 20px rgba(0, 173, 181, 0.25);
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 173, 181, 0.35);
     border-color: #00ADB5;
 }
 
-
 .prod-card-img-container {
     width: 100%;
-    flex: 1;
+    height: 180px;
+    min-height: 180px;
+    max-height: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: rgba(18, 18, 42, 0.8);
 }
 
 .prod-card-img-container img {
-    width: 70%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .prod-card-description-container {
-    padding-left: 5px;
-    padding-right: 5px;
+    width: 100%;
+    padding: 8px 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     flex: 1;
+    gap: 4px;
 }
 
 .prod-card-description-container h2 {
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
-    color: #0B1E3A;
+    color: #e0e0e0;
+    margin: 0;
+}
+
+.prod-card-description-container p {
+    font-size: 12px;
+    text-align: center;
+    color: #a0a0a0;
+    margin: 0;
 }
 
 .prod-card-description-container span {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
     color: #00ADB5;
+}
+
+.prod-card-description-container button {
+    background-color: #00ADB5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 90%;
+    margin-top: 4px;
+}
+
+.prod-card-description-container button:hover {
+    background-color: #008c93;
 }
