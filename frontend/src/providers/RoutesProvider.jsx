@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from "../pages/Home/Home.jsx";
 import Detail from '../pages/Detail/Detail.jsx';
 import Cart from '../pages/Cart/Cart.jsx';
+import Admin from "../pages/Admin/Admin.jsx";
 import ScrollToTop from '../components/ScrollToTop/ScrollToTop.jsx';
 
 
@@ -45,6 +46,7 @@ const RoutesProvider = () => {
                     <Route path="/cart" element={<Cart />} />
                     <Route path="/nosotros" element={<Nosotros />} />
                     <Route path="/contacto" element={<Contacto />} />
+                    <Route path="/admin" element={<Admin />} />
                 </Routes>
             </Router>
         </>

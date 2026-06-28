@@ -18,6 +18,7 @@ const Header = () => {
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/nosotros">Nosotros</Link></li>
                     <li><Link to="/contacto">Contacto</Link></li>
+                    <li><Link to="/admin">Admin</Link></li>
                     <li className="nav-hidden-link"><Link to="/cart">Carrito</Link></li>
                     <li className="nav-hidden-link"><Link to="/">Login</Link></li>
                 </ul>
