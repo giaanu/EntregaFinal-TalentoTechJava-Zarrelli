@@ -1,0 +1,140 @@
+.home-central-section-container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../../assets//img/ocarina.jpg);
+    display: flex;
+    color: #ffffff;
+    padding-top: 8%;
+}
+
+.home-h1-container,
+.home-central-img-container {
+    flex: 1;
+}
+
+.home-h1-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 15%;
+}
+
+.home-h1-container h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    text-align: left;
+    padding-left: 10%;
+}
+
+.home-text-color-1 {
+    color: #00ADB5;
+}
+
+.home-text-color-2 {
+    color: #4FC3F7;
+}
+
+.home-central-section-container p {
+    font-size: 1.2rem;
+    color: #E0E0E0;
+    max-width: 100%;
+    line-height: 1.5;
+    padding-left: 10%;
+}
+
+.home-central-img-container img {
+    width: 50%;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                               Medias Queries                               */
+/* -------------------------------------------------------------------------- */
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .home-central-section-container {
+        min-height: 100vh;
+    }
+
+    .home-h1-container {
+        align-items: flex-start;
+    }
+
+    .home-h1-container h1 {
+        font-size: 2rem;
+        padding-left: 10%;
+    }
+
+    .home-h1-container p {
+        font-size: 1rem;
+        padding-left: 10%;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .home-central-section-container {
+        min-height: 150vh;
+    }
+
+    .home-h1-container {
+        align-items: flex-start;
+    }
+
+    .home-h1-container h1 {
+        font-size: 2rem;
+        padding-left: 10%;
+    }
+
+    .home-h1-container p {
+        font-size: 1rem;
+        padding-left: 10%;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .home-central-section-container {
+        flex-direction: column;
+    }
+
+    .home-h1-container,
+    .home-central-img-container {
+        flex: 1;
+    }
+
+    .home-h1-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+    }
+
+    .home-h1-container h1 {
+        margin: 0;
+        font-size: 2rem;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .home-h1-container p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+
+    .home-central-img-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .home-central-img-container img {
+        height: 150px;
+    }
+}
+
+/* border: 1px solid red; */

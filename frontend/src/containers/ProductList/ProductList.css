@@ -1,0 +1,108 @@
+.product-list-section {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin-top: -23%;
+}
+
+.product-list-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 3%;
+    place-items: center;
+    z-index: 2;
+    margin-bottom: 15%;
+}
+
+.product-list-container a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    max-width: 80%;
+}
+
+
+.product-list-pagination-container {
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.product-list-pagination-container span {
+    padding: 0.2rem 1rem;
+    border: 1px solid #00ADB5;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.product-list-pagination-container button {
+    background-color: #00ADB5;
+    color: #ffffff;
+    border: 1px solid #00ADB5;
+    border-radius: 6px;
+    padding: 0.4rem 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.product-list-pagination-container button:hover {
+    background-color: #ffffff;
+    color: #00ADB5;
+    box-shadow: 0 0 10px rgba(0, 173, 181, 0.4);
+}
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                               Medias Queries                               */
+/* -------------------------------------------------------------------------- */
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .product-list-container {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 0.1%;
+        margin-bottom: 10%;
+    }
+
+    .product-list-container a {
+        max-width: 90%;
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .product-list-container {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 0.1%;
+        margin-bottom: 10%;
+    }
+
+    .product-list-container a {
+        max-width: 90%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+    .product-list-container {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 0.1%;
+        margin-bottom: 30%;
+    }
+
+    .product-list-container a {
+        max-width: 90%;
+    }
+}
+
+/* border: 1px solid red; */

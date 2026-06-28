@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "CPU",
+    "price": 399999,
+    "imageUrl": "/src/assets/img/cpu.jpg",
+    "description": "AMD Procesador de escritorio Ryzen 5 7600X"
+  },
+  {
+    "id": 2,
+    "name": "Fuente",
+    "price": 439999,
+    "imageUrl": "/src/assets/img/fuente.jpg",
+    "description": "Fuente de Poder Asus Rog Strix 750W."
+  },
+  {
+    "id": 3,
+    "name": "Placa de Video Nvidea Geforce 4070",
+    "price": 1779999,
+    "imageUrl": "/src/assets/img/gpu.jpg",
+    "description": "Placa de Video Asus Rog Strix GeForce RTX 4070."
+  },
+  {
+    "id": 4,
+    "name": "Memoria RAM DDR5",
+    "price": 220000,
+    "imageUrl": "/src/assets/img/ram.jpg",
+    "description": "Memoria RAM DDR5 16gb Corsair Vengeance Black"
+  },
+  {
+    "id": 5,
+    "name": "Gabinete Gamer Antec C5",
+    "price": 80000,
+    "imageUrl": "/src/assets/img/gabinete.jpeg",
+    "description": "Gabinete gamer RGB con ventana lateral de vidrio templado"
+  },
+  {
+    "id": 6,
+    "name": "Motherboard Asus",
+    "price": 499000,
+    "imageUrl": "/src/assets/img/motherboard.jpeg",
+    "description": "Placa Madre Asus ROG Strix X870E-E socket AM5"
+  },
+  {
+    "id": 7,
+    "name": "Disco SSD",
+    "price": 99499,
+    "imageUrl": "/assets/img/ssd.jpg",
+    "description": "Disco Ssd XPG Spectrix S20G 1TB"
+  }
+]

@@ -1,0 +1,19 @@
+.cart-page-h1 {
+    text-align: center;
+    color: #0B1E3A;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2rem 0 1.5rem;
+    position: relative;
+}
+
+.cart-page-h1::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #00ADB5, #08D9D6);
+    margin: 0.5rem auto 0;
+    border-radius: 4px;
+    z-index: 0;
+}

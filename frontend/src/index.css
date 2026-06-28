@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+h1{
+    text-align: center;
+}
+
+.section-divider {
+    border: none;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 40px auto;
+    width: 90%;
+}
